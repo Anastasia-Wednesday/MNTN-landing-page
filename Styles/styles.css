@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Chronicle";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Chronicle"),
+    url("/Fonts/Chronicle-Display-Roman.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: light;
+  src: local("Gilroy-Light"), url("/Fonts/Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: bolder;
+  src: local("Gilroy-ExtraBold"),
+    url("/Fonts/Gilroy-ExtraBold.woff") format("woff");
+}
+
+body {
+  font-family: "Gilroy-Light";
+  width: 1920px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Images/HG.png), url(../Images/VG.png),
+    url(../Images/MG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -400px;
+  background-color: #354147;
+}
+
+.container {
+  /* padding-left: 80px;
+  padding-right: 80px; */
+}
+
+.header {
+  padding: 58px 80px;
+  width: 100%;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 40vw;
+}
+
+.logo {
+  font-family: "Chronicle";
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  margin-right: 40vw;
+}
+
+.nav-list {
+  display: flex;
+
+  list-style: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+  padding-left: 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.account-link {
+  font-size: 17px;
+  line-height: 21px;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.account-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.hero-header-first {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+  color: #fbd784;
+
+  margin-bottom: 32px;
+}
+
+.hero-header-second {
+  font-family: "Chronicle";
+  font-weight: 300;
+  font-size: 88px;
+  line-height: 100px;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.scroll-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.scroll-icon {
+  width: 16px;
+  height: 24px;
+}
+
+.follow-bar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 360px; /* Stay at the top */
+  left: 82px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.follow-bar-header {
+  writing-mode: vertical-lr;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.follow-bar-icons-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.follow-icon {
+  width: 20px;
+  height: 20px;
+}
